@@ -52,8 +52,9 @@ Email: <input name="email" required="" size="60" type="email"/>
       shoeType: shoeType
     });
 //  //  Sign-up Track call
-    analytics.track('user signed up', user, function() {
+    analytics.track('signUp', user, function() {
       window.location.href = "";
+     method: "google";
     });
 // // Ecommerce Events
    analytics.track('Products Searched', {
