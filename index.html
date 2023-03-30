@@ -61,6 +61,8 @@ Email: <input name="email" required="" size="60" type="email"/>
    analytics.track('Products Searched', {
     query: 'kith air force 1'
    });
+  
+  Sentry.captureException(new Error("This is my fake error message"));
  
    // analytics.track('Product List Viewed', {
    //   list_id: 'hot_sneakers_2021',
