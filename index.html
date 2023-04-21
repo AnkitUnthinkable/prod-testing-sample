@@ -63,6 +63,8 @@ Email: <input name="email" required="" size="60" type="email"/>
    });
   
   Sentry.captureException(new Error("This is my fake error message"));
+  
+  throw new Sentry.NotImplemented("this is NotImplemented");
  
    // analytics.track('Product List Viewed', {
    //   list_id: 'hot_sneakers_2021',
